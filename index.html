@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="مكتبة إلكترونية لمؤلفات القمص يسطس جوزيف">
+<title>مكتبة أبونا | مؤلفات القمص يسطس جوزيف</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Kufi+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="cross">☦</div>
+  <p class="eyebrow">مكتبة إلكترونية</p>
+  <h1>مكتبة أبونا</h1>
+  <p class="subtitle">مؤلفات القمص يسطس جوزيف</p>
+  <p class="intro">نافذة واحدة تجمع المؤلفات في الطقس والروحيات والتاريخ والفن القبطي.</p>
+</header>
+<main>
+<section class="tools" aria-label="البحث والتصفية">
+ <label class="search"><span>⌕</span><input id="q" type="search" placeholder="ابحث باسم الكتاب…" autocomplete="off"></label>
+ <div id="filters" class="filters"></div>
+</section>
+<div class="count"><span id="count"></span> كتابًا في المكتبة</div>
+<section id="grid" class="grid" aria-live="polite"></section>
+<p id="empty" class="empty" hidden>لا توجد كتب مطابقة للبحث.</p>
+</main>
+<footer><span>☦</span><p>مكتبة أبونا — نسخة تجريبية</p></footer>
+<script src="books.js"></script><script src="app.js"></script>
+</body></html>
